@@ -1,13 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/21701e18b9.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-[#16161A]">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col md:flex-row items-center p-8 max-w-7xl mx-auto">
+        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Hi, I'm Richard Luu</h1>
+            <p class="text-xl text-gray-300 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="flex space-x-4">
+                <a href="https://www.linkedin.com/in/richard-m-luu/" target="_blank" class="text-gray-300 hover:text-blue-400 transition-colors">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="https://github.com/RichardLuu02" target="_blank" class="text-gray-300 hover:text-white transition-colors">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="md:w-1/2">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQFZ34_gspkKNg/profile-displayphoto-shrink_800_800/B56ZRIuROEHQAo-/0/1736386877501?e=1747267200&v=beta&t=zplfH8AwDuCkv-IFiT3jDQAc5oXbzRl0APCqS_4j-Uw" alt="Profile Image" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-16 px-8 bg-[#16161A]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-white">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="images/project1.jpg" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="text-white text-xl font-semibold">Project Title</h3>
+                        <p class="text-gray-300">project description</p>
+                    </div>
+                    <a href="#" class="absolute inset-0" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <!-- Add more project cards as needed -->
+                <div class="project-card group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="images/project1.jpg" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="text-white text-xl font-semibold">Project Title</h3>
+                        <p class="text-gray-300">project description</p>
+                    </div>
+                    <a href="#" class="absolute inset-0" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <div class="project-card group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <img src="images/project1.jpg" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="text-white text-xl font-semibold">Project Title</h3>
+                        <p class="text-gray-300">project description</p>
+                    </div>
+                    <a href="#" class="absolute inset-0" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
